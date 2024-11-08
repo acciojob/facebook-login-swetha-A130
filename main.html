@@ -1,84 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Facebook Login</title>
-    <style>
-      /* Styling the body */
-      body {
-        background-color: #f6f6f6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <style>
+    /* Styling for body */
+    body {
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-      /* Styling for the left section */
-      #left {
-        width: 450px;
-        margin-top: 70px;
-        display: inline-block;
-      }
+    /* Left section styling */
+    #left {
+      width: 450px;
+      margin-top: 70px;
+      display: inline-block;
+    }
 
-      /* Styling for the form */
-      #right form {
-        display: flex;
-        width: 300px;
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px #ccc;
-        flex-direction: column;
-        gap: 10px;
-      }
+    /* Right section and form styling */
+    #right form {
+      display: flex;
+      width: 300px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #ccc;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-      /* Input styling */
-      input {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-      }
+    /* Input styling */
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+    }
 
-      /* Button styling */
-      button {
-        background-color: #1877f2;
-        border-radius: 5px;
-        padding: 10px 20px;
-        color: white;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-      }
+    /* Button styling */
+    button {
+      background-color: #1877f2;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-      /* Signup button styling */
-      .signup {
-        background-color: #42b72a;
-        margin-top: 10px;
-      }
+    /* Signup button styling */
+    .signup {
+      background-color: #42b72a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
 
-      /* Link styling */
-      .styled-link {
-        color: #1877f2;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Left section with Facebook logo and description -->
-    <div class="face" id="left">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo" width="100">
-      <p>Facebook helps you connect and share with the people in your life.</p>
-    </div>
+    /* Link styling */
+    .styled-link {
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Right section with form and buttons -->
-    <div class="face" id="right">
-      <form>
-        <input type="text" id="email" placeholder="Email address or phone number">
-        <input type="password" id="password" placeholder="Password">
-        <button type="submit">Log in</button>
-        <a href="#" class="styled-link">Forgotten account?</a>
-      </form>
-      <button class="signup">Create new account</button>
-    </div>
-  </body>
+  <!-- Left section with Facebook logo and description -->
+  <div class="face" id="left">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo" width="100">
+    <p>Facebook helps you connect and share with the people in your life.</p>
+  </div>
+
+  <!-- Right section with form and buttons -->
+  <div class="face" id="right">
+    <form>
+      <input type="text" id="email" placeholder="Email address or phone number">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Log in</button>
+      <a href="#" class="styled-link">Forgotten account?</a>
+    </form>
+    <button class="signup">Create new account</button>
+  </div>
+
+</body>
 </html>
