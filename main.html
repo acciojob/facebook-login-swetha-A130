@@ -1,23 +1,84 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Facebook Login</title>
+    <style>
+      /* Styling the body */
+      body {
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Styling for the left section */
+      #left {
+        width: 450px;
+        margin-top: 70px;
+        display: inline-block;
+      }
+
+      /* Styling for the form */
+      #right form {
+        display: flex;
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ccc;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      /* Input styling */
+      input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      /* Button styling */
+      button {
+        background-color: #1877f2;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      /* Signup button styling */
+      .signup {
+        background-color: #42b72a;
+        margin-top: 10px;
+      }
+
+      /* Link styling */
+      .styled-link {
+        color: #1877f2;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <!-- Write your code here -->
-	  <div class="face" id="left">
-		  <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgubD4g7CNT2e-kNMttJaw3otXq-RSAXwFkQ&s" alt="Facebook logo">
-		  <p>Facebook helps you connect and share with the people in your life.</p>
-	  </div>
-		  <div class="face" id="right">
-			  <form>
-			  <input type="text" id="email" placeholder="Email address or phone number"><br>
-			  <input type="password" id="password" placeholder="Password"><br>
-	<buton  type="submit">Login</buton><br>
-			  
-		  <a href="https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D">Forgotten account?</a></div>
-	  </div>
-	  <button class="signup">Create new account</button>
-	  </form>
-	  
+    <!-- Left section with Facebook logo and description -->
+    <div class="face" id="left">
+      <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo" width="100">
+      <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+
+    <!-- Right section with form and buttons -->
+    <div class="face" id="right">
+      <form>
+        <input type="text" id="email" placeholder="Email address or phone number">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Log in</button>
+        <a href="#" class="styled-link">Forgotten account?</a>
+      </form>
+      <button class="signup">Create new account</button>
+    </div>
   </body>
 </html>
